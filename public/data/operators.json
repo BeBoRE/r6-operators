@@ -1,7 +1,7 @@
 {
   "operators": [
     {
-      "name": "Smoinky",
+      "name": "Smoke",
       "gadgets": [
         "BARBED",
         "SHIELD"
@@ -65,7 +65,7 @@
       "hex": "#AE1211"
     },
     {
-      "name": "Jager",
+      "name": "Jäger",
       "gadgets": [
         "CAM",
         "BARBED"
