@@ -1,2 +1,5 @@
 **/node_modules
 **/.vscode
+deploy.bat
+redeploy.sh
+*.md
