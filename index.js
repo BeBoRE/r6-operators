@@ -19,4 +19,4 @@ app.get('/', (req, res) => {
   res.render('index', { data: JSON.stringify(data), text: 'hallo' });
 });
 
-app.listen(port).on('listening', () => console.log(`Now listening on port ${port}`));
+app.listen(port).on('listening', () => console.log(`Now listening on port ${port} in a ${process.env.NODE_ENV} environment`));
