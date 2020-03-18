@@ -1,0 +1,51 @@
+{
+  "name": "r6-operators",
+  "version": "1.0.0",
+  "description": "Easily see which operator has which secondary gadget",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start http://localhost:4444 && node index.js"
+  },
+  "keywords": [
+    "r6",
+    "operators",
+    "gadgets"
+  ],
+  "author": "BeBoRE",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-pug": "^1.2.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue": "^2.6.11"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "plugin:vue/recommended"
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true
+    },
+    "globals": {
+      "Vue": "readonly",
+      "data": "readonly"
+    },
+    "plugins": [
+      "pug"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "pug": "^2.0.4"
+  }
+}

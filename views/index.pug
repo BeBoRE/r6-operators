@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css", crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+    script!=`data=${data}`
+    title R6 Secondary Gadgets
+  body
+    #vueApp.container
+      .row
+        .col.col-auto.gadget-select
+          .row
+            .gadget.col
+              button(@click="filterOps()")
+                span CLEAR
+              button(@click="filterOps('C4')")
+                img(src="/img/Gadgets_DEF_Nitro.png", alt="nitro")
+              button(@click="filterOps('IMPACT')")
+                img(src="/img/Gadgets_DEF_Impact.png", alt="impact")
+              button(@click="filterOps('SHIELD')")
+                img(src="/img/Gadgets_DEF_Deployable-Shield.png", alt="shield")
+              button(@click="filterOps('BARBED')")
+                img(src="/img/Gadgets_DEF_Barbedwire.png", alt="barbedwire")
+              button(@click="filterOps('CAM')")
+                img(src="/img/Gadgets_DEF_Bulletproof-Cam.png", alt="cam")
+        .col
+          .container
+            .row
+              .operator(v-for="operator in operators" v-bind:style="{ backgroundColor: operator.hex, color: bestRatio(operator.hex) }").col
+                .row.no-gutters
+                  .col
+                    //div(style="width: 200px; height: 200px", :style="{ backgroundColor: bestRatio(operator.hex) }")
+                    h1.name {{operator.name}}
+                  template(v-for="gadget in operator.gadgets")
+                    .gadget(v-if="gadget=='BARBED'").col.col-auto.gadget
+                      button(@click="filterOps('BARBED')")
+                        img(src="/img/Gadgets_DEF_Barbedwire.png", alt="barbedwire")
+                    .gadget(v-if="gadget=='CAM'").col.col-auto.gadget
+                      button(@click="filterOps('CAM')")
+                        img(src="/img/Gadgets_DEF_Bulletproof-Cam.png", alt="cam")
+                    .gadget(v-if="gadget=='C4'").col.col-auto.gadget
+                      button(@click="filterOps('C4')")
+                        img(src="/img/Gadgets_DEF_Nitro.png", alt="nitro")
+                    .gadget(v-if="gadget=='IMPACT'").col.col-auto.gadget
+                      button(@click="filterOps('IMPACT')")
+                        img(src="/img/Gadgets_DEF_Impact.png", alt="impact")
+                    .gadget(v-if="gadget=='SHIELD'").col.col-auto.gadget
+                      button(@click="filterOps('SHIELD')")
+                        img(src="/img/Gadgets_DEF_Deployable-Shield.png", alt="shield")
+  script(src="/js/index.js")

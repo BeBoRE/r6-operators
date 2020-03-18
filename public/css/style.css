@@ -1,0 +1,80 @@
+@font-face{
+  src: url("/font/r6 font.woff");
+  font-family: r6;
+}
+
+* {
+  font-family: 'r6', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+body {
+  font-family: 'r6', sans-serif;
+  letter-spacing: 0.1em;
+  background-color: #0F1318;
+}
+
+.gadget {
+  height: 100%;
+  width: 100px !important;
+  position: relative;
+  height: 100px;
+}
+
+.gadget img{
+  position: relative !important;
+  max-height: 80%;
+  max-width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gadget button {
+  width: 100%;
+  height: 100%;
+  background-color: #0000;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  transition: background 200ms ease-out;
+  cursor: pointer;
+  outline: none;
+  color: #FFFD;
+  font-size: 2.8em;
+}
+
+.gadget button:hover{
+  background-color: #0004;
+}
+
+.gadget button:active {
+  background-color: #0007;
+}
+
+.gadget button img {
+  top: initial;
+  left: initial;
+  transform: initial;
+  pointer-events: none;
+}
+
+.operator {
+  background-color: #0F1318;
+  min-width: 310px;
+  max-width: 100%;
+}
+
+.gadget-select{
+  width: 150px !important;
+  background-color: #0F1318;
+}
+
+.operator h1.name{
+  margin: 0;
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}

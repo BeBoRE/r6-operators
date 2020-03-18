@@ -1,0 +1,220 @@
+{
+  "operators": [
+    {
+      "name": "Smonk",
+      "gadgets": [
+        "BARBED",
+        "SHIELD"
+      ],
+      "hex": "#916E79"
+    },
+    {
+      "name": "Mute",
+      "gadgets": [
+        "C4",
+        "CAM"
+      ],
+      "hex": "#916E79"
+    },
+    {
+      "name": "Castle",
+      "gadgets": [
+        "CAM",
+        "IMPACT"
+      ],
+      "hex": "#D9592B"
+    },
+    {
+      "name": "Pulse",
+      "gadgets": [
+        "BARBED",
+        "C4"
+      ],
+      "hex": "#D9592B"
+    },
+    {
+      "name": "Doc",
+      "gadgets": [
+        "CAM",
+        "BARBED"
+      ],
+      "hex": "#376283"
+    },
+    {
+      "name": "Rook",
+      "gadgets": [
+        "BARBED",
+        "IMPACT"
+      ],
+      "hex": "#376283"
+    },
+    {
+      "name": "Kapkan",
+      "gadgets": [
+        "IMPACT",
+        "C4"
+      ],
+      "hex": "#AE1211"
+    },
+    {
+      "name": "The Lord",
+      "gadgets": [
+        "BARBED",
+        "SHIELD"
+      ],
+      "hex": "#AE1211"
+    },
+    {
+      "name": "Jager",
+      "gadgets": [
+        "CAM",
+        "BARBED"
+      ],
+      "hex": "#FBC13C"
+    },
+    {
+      "name": "Bandit",
+      "gadgets": [
+        "BARBED",
+        "C4"
+      ],
+      "hex": "#FBC13C"
+    },
+    {
+      "name": "Frost",
+      "gadgets": [
+        "CAM",
+        "SHIELD"
+      ],
+      "hex": "#0081A4"
+    },
+    {
+      "name": "Valk",
+      "gadgets": [
+        "SHIELD",
+        "C4"
+      ],
+      "hex": "#C78F14"
+    },
+    {
+      "name": "Cav",
+      "gadgets": [
+        "IMPACT",
+        "CAM"
+      ],
+      "hex": "#488944"
+    },
+    {
+      "name": "Echo",
+      "gadgets": [
+        "SHIELD",
+        "BARBED"
+      ],
+      "hex": "#9D263F"
+    },
+    {
+      "name": "Mira",
+      "gadgets": [
+        "BARBED",
+        "C4"
+      ],
+      "hex": "#743C91"
+    },
+    {
+      "name": "Lesion",
+      "gadgets": [
+        "IMPACT",
+        "CAM"
+      ],
+      "hex": "#AC4725"
+    },
+    {
+      "name": "Ela",
+      "gadgets": [
+        "BARBED",
+        "SHIELD"
+      ],
+      "hex": "#3F9395"
+    },
+    {
+      "name": "Vigil",
+      "gadgets": [
+        "CAM",
+        "IMPACT"
+      ],
+      "hex": "#C7CFD1"
+    },
+    {
+      "name": "Maestro",
+      "gadgets": [
+        "BARBED",
+        "IMPACT"
+      ],
+      "hex": "#686D1D"
+    },
+    {
+      "name": "Alibi",
+      "gadgets": [
+        "IMPACT",
+        "SHIELD"
+      ],
+      "hex": "#686D1D"
+    },
+    {
+      "name": "Clash",
+      "gadgets": [
+        "BARBED",
+        "IMPACT"
+      ],
+      "hex": "#6E828F"
+    },
+    {
+      "name": "Kaid",
+      "gadgets": [
+        "C4",
+        "BARBED"
+      ],
+      "hex": "#AC824B"
+    },
+    {
+      "name": "Mozzie",
+      "gadgets": [
+        "BARBED",
+        "C4"
+      ],
+      "hex": "#D00255"
+    },
+    {
+      "name": "Warden",
+      "gadgets": [
+        "SHIELD",
+        "C4"
+      ],
+      "hex": "#2A4C9A"
+    },
+    {
+      "name": "Goyo",
+      "gadgets": [
+        "IMPACT",
+        "C4"
+      ],
+      "hex": "#115610"
+    },
+    {
+      "name": "Wamai",
+      "gadgets": [
+        "SHIELD",
+        "BARBED"
+      ],
+      "hex": "#05C9D2"
+    },
+    {
+      "name": "Oryx",
+      "gadgets": [
+        "BARBED",
+        "CAM"
+      ],
+      "hex": "#7F5C7D"
+    }
+  ]
+}
