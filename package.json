@@ -24,7 +24,7 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "eslint-plugin-vue": "^6.2.2",
     "vue": "^2.6.11",
-    "minimist": ">=1.2.2",
+    "minimist": ">=1.2.3",
     "kind-of": ">=6.0.3"
   },
   "eslintConfig": {
