@@ -17,55 +17,6 @@ function compareOperators(operator1, operator2) {
 
 const operatorsSorted = data.operators.sort(compareOperators);
 
-/**
- * @typedef Hsl
- * @property {number} h hue
- * @property {number} s saturation
- * @property {number} l luminosity
- */
-
-function RGBToHSL(rgb) {
-  // Make r, g, and b fractions of 1
-  const r = rgb.r / 255;
-  const g = rgb.g / 255;
-  const b = rgb.b / 255;
-
-  // Find greatest and smallest channel values
-  const cmin = Math.min(r, g, b);
-  const cmax = Math.max(r, g, b);
-  const delta = cmax - cmin;
-  let h = 0;
-  let s = 0;
-  let l = 0;
-
-  // Calculate hue
-  // No difference
-  if (delta === 0) { h = 0; }
-  // Red is max
-  else if (cmax === r) h = ((g - b) / delta) % 6;
-  // Green is max
-  else if (cmax === g) h = (b - r) / delta + 2;
-  // Blue is max
-  else h = (r - g) / delta + 4;
-
-  h = Math.round(h * 60);
-
-  // Make negative hues positive behind 360°
-  if (h < 0) { h += 360; }
-
-  // Calculate lightness
-  l = (cmax + cmin) / 2;
-
-  // Calculate saturation
-  s = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
-
-  // Multiply l and s by 100
-  s = +(s * 100).toFixed(1);
-  l = +(l * 100).toFixed(1);
-
-  return { h, s, l };
-}
-
 const removeHash = (hex) => (hex.charAt(0) === '#' ? hex.slice(1) : hex);
 
 const parseHex = (nakedHex) => {
