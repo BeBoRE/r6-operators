@@ -157,9 +157,6 @@ const app = new Vue({
       const lightContrast = calculateContrast(light, destination);
       const darkContrast = calculateContrast(dark, destination);
 
-      console.log(`Light contrast: ${lightContrast}`);
-      console.log(`Dark contrast: ${darkContrast}`);
-
       if (lightContrast > darkContrast) return lightHex;
       return darkHex;
     },
