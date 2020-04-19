@@ -4,7 +4,7 @@
   "description": "Easily see which operator has which secondary gadget",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "start": "start http://localhost:4444 && node index.js"
   },
   "keywords": [
